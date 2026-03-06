@@ -1,4 +1,78 @@
+# ProjetACF2L2026
 
+> Projet de communication digitale réalisé dans le cadre du BTS SIO SLAM — Novembre 2024
+
+---
+
+## Contexte
+
+Ce projet s'inscrit dans la stratégie de communication digitale de l'association **ACF2L**, visant à développer sa visibilité en ligne par la mise en place d'un site internet dynamique. Le site vitrine initial, conçu par la société Clarck à partir d'un template, nécessitait une finalisation et une évolution vers un site interactif permettant les échanges avec le public et les adhérents.
+
+## Objectifs
+
+- Finaliser et corriger le site vitrine existant.
+- Mettre en place un **serveur d'hébergement** auto-géré (matériel reconditionné via le projet TAE — ATD Quart Monde / LaCollecte.tech).
+- Déployer le site sur ce serveur en respectant les obligations légales d'hébergement.
+- Développer les fonctionnalités dynamiques : **formulaires de réservation / contact**, stockage en base de données.
+- Assurer la conformité **RGPD** des formulaires de collecte de données.
+
+## Stack technique
+
+| Domaine | Technologies |
+|---|---|
+| **Front-end** | HTML5, CSS3, JavaScript |
+| **Back-end** | PHP |
+| **Base de données** | MySQL |
+| **Serveur** | Apache (LAMP) |
+| **Versioning** | Git / GitHub |
+
+## Architecture
+
+```
+ProjetACF2L2026/
+├── index.html              # Page d'accueil
+├── assets/
+│   ├── css/                # Feuilles de style
+│   ├── js/                 # Scripts JS
+│   └── img/                # Ressources graphiques
+├── php/
+│   ├── config.php          # Connexion BDD
+│   └── traitement.php      # Traitement des formulaires
+├── sql/
+│   └── schema.sql          # Structure de la base de données
+└── README.md
+```
+
+## Fonctionnalités développées
+
+- **Site vitrine** — Présentation de l'association, activités et actualités.
+- **Formulaires dynamiques** — Réservation de vols et demandes d'informations avec validation côté client et serveur.
+- **Base de données** — Stockage des soumissions, gestion des contacts et des réservations.
+- **Conformité RGPD** — Mentions légales, consentement explicite, politique de traitement des données.
+
+## Moyens mobilisés
+
+- **Équipe** : groupe de 3 étudiants BTS SIO (stage en association).
+- **Matériel** : ordinateur reconditionné fourni par le projet TAE en partenariat avec LaCollecte.tech.
+
+## Installation
+
+```bash
+git clone https://github.com/fred5551/ProjetACF2L2026.git
+```
+
+1. Configurer un environnement LAMP (Apache, MySQL, PHP).
+2. Importer `sql/schema.sql` dans MySQL.
+3. Renseigner les identifiants de connexion dans `php/config.php`.
+4. Déployer les fichiers à la racine du serveur web.
+
+## Auteur
+
+Projet réalisé dans le cadre du **BTS SIO SLAM** — Novembre 2024.
+
+## Licence
+
+Projet à usage éducatif.
 LICENSE:
 
 This template released under the Creative Commons Attribution-NoDerivatives 4.0 International License ( https://creativecommons.org/licenses/by-nd/4.0/ ) This means that you are free:
